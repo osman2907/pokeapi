@@ -3,7 +3,9 @@
 <template>
   <section id="section-home">
     <h1 class="text-center pt-3">Ejercicio Práctico de Vue</h1>
-    <div class="d-block d-xl-flex align-items-start justify-content-between home-info">
+    <div
+      class="d-block d-xl-flex align-items-start justify-content-between home-info"
+    >
       <div class="container-info info-develop">
         <h3 class="text-center">Información del desarrollador</h3>
         <div class="info">Desarrollado por Osman Pérez</div>
@@ -49,7 +51,9 @@
             <img src="@/assets/img/logoGithub.png" />
           </div>
           <div class="ps-2">
-            <a href="https://github.com/" target="_blank"> github.com </a>
+            <a href="https://github.com/osman2907/pokeapi" target="_blank">
+              github.com/osman2907/pokeapi
+            </a>
           </div>
         </div>
       </div>
