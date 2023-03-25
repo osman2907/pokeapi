@@ -1,5 +1,3 @@
-<script setup></script>
-
 <template>
   <section id="section-home">
     <h1 class="text-center pt-3">Ejercicio Práctico de Vue</h1>
