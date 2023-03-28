@@ -26,7 +26,7 @@ onMounted(() => {
 });
 
 const listar = (url) => {
-  url = url || "http://pokeapi.co/api/v2/pokemon/?limit=12";
+  url = url || "https://pokeapi.co/api/v2/pokemon/?limit=12";
   loading.value = true;
   axios.get(url).then((resp) => {
     list.value = resp.data.results;

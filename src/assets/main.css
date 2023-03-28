@@ -1,6 +1,18 @@
+/* General */
 .content {
   padding-top: 55px;
 }
+.title-small {
+  font-size: 14px;
+  color: grey;
+  font-weight: bold;
+}
+.list-small{
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+/* Fin General */
 
 /* Section Home */
 #section-home {

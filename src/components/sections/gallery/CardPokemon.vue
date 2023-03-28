@@ -12,18 +12,20 @@
         <div class="card-body d-flex flex-column">
           <div>
             <h5 class="card-title">{{ props.pokemon.name }}</h5>
-            <ul class="list-group mb-2">
-              <li
+            <div class="title-small">Tipo(s)</div>
+            <div class="list-small mb-2">
+              <div
                 v-for="(tipo, index) in props.pokemon.types"
                 :key="index"
-                class="list-group-item"
+                class="d-flex justify-content-between align-items-center"
               >
-                {{ tipo.type.name }}
-              </li>
-            </ul>
+                <div class="text-capitalize">{{ tipo.type.name }}</div>
+                <div><IconType :type="tipo.type.name"/></div>
+              </div>
+            </div>
           </div>
           <div class="d-flex justify-content-end">
-            <button class="btn btn-secondary">Ver Detalles</button>
+            <button class="btn btn-secondary w-100">Ver Detalles</button>
           </div>
         </div>
       </div>
@@ -32,6 +34,7 @@
 </template>
 
 <script setup>
+import IconType from "../../common/IconType.vue";
 const props = defineProps({
   pokemon: Object,
 });
