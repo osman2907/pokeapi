@@ -1,3 +1,5 @@
 module.exports = {
-  publicPath: "/nombre-repositorio",
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/pokeapi/'
+    : '/'
 };
