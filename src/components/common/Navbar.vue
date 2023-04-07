@@ -7,13 +7,13 @@ const props = defineProps({
 });
 
 const route = useRoute();
-const routeName = computed(() => route.name)
+const routeName = computed(() => route.name);
 </script>
 
 <template>
   <nav class="navbar navbar-dark navbar-expand-md bg-dark fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Pokémon</a>
+      <RouterLink to="/" class="navbar-brand">Pokémon</RouterLink>
       <button
         class="navbar-toggler"
         type="button"
@@ -40,7 +40,12 @@ const routeName = computed(() => route.name)
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item" v-for="(item, index) in items" :key="index" data-bs-dismiss="offcanvas">
+            <li
+              class="nav-item"
+              v-for="(item, index) in items"
+              :key="index"
+              data-bs-dismiss="offcanvas"
+            >
               <RouterLink
                 :to="item.route"
                 class="nav-link"
@@ -48,12 +53,6 @@ const routeName = computed(() => route.name)
                 >{{ item.label }}</RouterLink
               >
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li> -->
           </ul>
         </div>
       </div>

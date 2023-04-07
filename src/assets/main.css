@@ -27,7 +27,7 @@
 }
 /* Fin Detail Pokemon*/
 
-/* Section Home */
+/* Sections */
 #section-home {
   background-image: url("@/assets/img/HomePokemon.jpg");
   min-height: 93vh;
@@ -46,20 +46,34 @@
   padding: 16px 16px;
 }
 
+#section-about {
+  background-image: url("@/assets/img/AboutPokemon.jpg");
+  min-height: 93vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 16px 0px;
+}
+
 #section-home a {
   color: #fff;
 }
 
 #section-home h1,
+#section-home h3,
 #section-gallery > h1,
-#section-home h3 {
+#section-about > h1,
+#section-about h3 {
   color: #fff;
   text-shadow: #000 2px 2px;
 }
 
-#section-home .info {
+#section-home .info,
+#section-about .info {
   color: #fff;
 }
+
+
 
 #section-home .info-develop {
   margin-top: 40vh;
@@ -69,10 +83,24 @@
   width: 32px;
 }
 
-#section-home .container-info {
+#section-home .container-info,
+#section-about .container-info {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 16px;
   border-radius: 8px;
+  text-align: justify;
+}
+
+@media only screen and (min-width: 768px) {
+  #section-about .container-info {
+    min-height: 280px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  #section-about .container-info {
+    min-height: 200px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -87,7 +115,7 @@
     margin-top: 150px;
   }
 }
-/* Fin Section Home */
+/* Fin Sections */
 
 /*Loading*/
 #loading-component {
