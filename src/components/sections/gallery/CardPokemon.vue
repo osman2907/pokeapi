@@ -20,12 +20,19 @@
                 class="d-flex justify-content-between align-items-center"
               >
                 <div class="text-capitalize">{{ tipo.type.name }}</div>
-                <div><IconType :type="tipo.type.name"/></div>
+                <div><IconType :type="tipo.type.name" /></div>
               </div>
             </div>
           </div>
           <div class="d-flex justify-content-end">
-            <button class="btn btn-secondary w-100">Ver Detalles</button>
+            <button
+              class="btn btn-secondary w-100"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              @click="verDetalles"
+            >
+              Ver Detalles
+            </button>
           </div>
         </div>
       </div>
@@ -38,4 +45,11 @@ import IconType from "../../common/IconType.vue";
 const props = defineProps({
   pokemon: Object,
 });
+
+const emit = defineEmits(["verDetalles"]);
+
+const verDetalles = () => {
+  emit("verDetalles", props.pokemon);
+}
+
 </script>

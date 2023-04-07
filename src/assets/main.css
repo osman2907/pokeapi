@@ -7,12 +7,25 @@
   color: grey;
   font-weight: bold;
 }
-.list-small{
+.list-small {
   border: solid 1px #ccc;
   border-radius: 5px;
   padding: 5px 10px;
 }
 /* Fin General */
+
+/* Detail Pokemon*/
+#detail-pokemon .title {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#detail-pokemon .content {
+  padding-top: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* Fin Detail Pokemon*/
 
 /* Section Home */
 #section-home {
@@ -38,7 +51,7 @@
 }
 
 #section-home h1,
-#section-gallery h1,
+#section-gallery > h1,
 #section-home h3 {
   color: #fff;
   text-shadow: #000 2px 2px;
@@ -62,7 +75,7 @@
   border-radius: 8px;
 }
 
-@media only screen and (min-width: 1200px)  {
+@media only screen and (min-width: 1200px) {
   #section-home .info-develop {
     margin-top: 0px;
   }
@@ -76,7 +89,6 @@
 }
 /* Fin Section Home */
 
-
 /*Loading*/
 #loading-component {
   z-index: 9999;
@@ -88,7 +100,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .lds-default {
   display: inline-block;
@@ -165,7 +177,10 @@
   left: 62px;
 }
 @keyframes lds-default {
-  0%, 20%, 80%, 100% {
+  0%,
+  20%,
+  80%,
+  100% {
     transform: scale(1);
   }
   50% {

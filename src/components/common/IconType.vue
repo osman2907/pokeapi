@@ -9,7 +9,7 @@ import IconsType from '@/utils/types.js'
 import { computed } from 'vue';
 
 const props = defineProps({
-  type: Object,
+  type: String,
 });
 
 const src = computed(() => IconsType[props.type])

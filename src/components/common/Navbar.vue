@@ -40,7 +40,7 @@ const routeName = computed(() => route.name)
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-            <li class="nav-item" v-for="(item, index) in items" :key="index">
+            <li class="nav-item" v-for="(item, index) in items" :key="index" data-bs-dismiss="offcanvas">
               <RouterLink
                 :to="item.route"
                 class="nav-link"
