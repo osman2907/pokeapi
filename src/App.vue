@@ -3,6 +3,8 @@ import { computed } from "vue";
 import { RouterLink, RouterView } from "vue-router";
 import Navbar from "@/components/common/Navbar.vue";
 
+document.title = "Pokeapi con Vue3"
+
 const itemsMenu = computed(() => [
   { route: "/", label: "Home" },
   { route: "/gallery", label: "Galería" },

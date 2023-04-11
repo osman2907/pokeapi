@@ -11,7 +11,7 @@
       <div class="col-md-8">
         <div class="card-body d-flex flex-column">
           <div>
-            <h5 class="card-title">{{ props.pokemon.name }}</h5>
+            <h5 class="card-title text-capitalize">{{ props.pokemon.name }}</h5>
             <div class="title-small">Tipo(s)</div>
             <div class="list-small mb-2">
               <div
