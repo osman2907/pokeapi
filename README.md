@@ -14,12 +14,11 @@ Repositorio compartido al público, con ejercicio práctico de Vue3 integrado a 
 #### Bootstrap
 - Mobile First Design
 #### VueJs
+- Desarrollo basado en componentes.
+- Composition API.
 - Propiedades Computadas.
 - Observadores(watch).
-- Composition API.
-- Desarrollo basado en componentes.
 - Eventos Emit.
-- 
 
 ## Ejecutar el proyecto
 Clonar el repositorio, ubicarse en la ruta del proyecto y ejecutar el comando:
