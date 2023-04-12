@@ -3,8 +3,8 @@
     <div class="row g-0">
       <div class="col-md-4 d-flex justify-content-center align-items-center">
         <img
-          :src="props.pokemon.sprites.front_default"
-          class="img-fluid rounded-start"
+          :src="props.pokemon.sprites.other.dream_world.front_default"
+          class="img-fluid rounded-start front"
           :alt="props.pokemon.name"
         />
       </div>

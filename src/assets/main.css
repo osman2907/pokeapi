@@ -221,4 +221,8 @@
 .card-pokemon {
   min-height: 200px;
 }
+
+.card-pokemon .front {
+  height: 150px;
+}
 /* Fin Card Pokemon */
