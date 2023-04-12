@@ -1,35 +1,41 @@
-# pokemon
+![Image text](https://osman2907.gitlab.io/portfolio/img/practices/VuePokeapi.png)
+# Ejercicio Vue3 Pokeapi
 
-This template should help get you started developing with Vue 3 in Vite.
+Repositorio compartido al público, con ejercicio práctico de Vue3 integrado a la pokeapi. Es un proyecto netamente colaborativo con la intención de ayudar a los desarrolladores que estén iniciando en VueJS.
+## Tecnologías utilizadas
+- VueJs versión 3 [Sitio Oficial](https://vuejs.org/)
+- Vite versión 4.0.0 [Sitio Oficial](https://vitejs.dev/)
+- Bootstrap versión 5 [Sitio Oficial](https://getbootstrap.com/)
+- Node versión 16.17.0 [Sitio Oficial](https://nodejs.org/es)
+- NPM versión 8.15.0
 
-## Recommended IDE Setup
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Fundamentos Aplicados
+#### Bootstrap
+- Mobile First Design
+#### VueJs
+- Propiedades Computadas.
+- Observadores(watch).
+- Composition API.
+- Desarrollo basado en componentes.
+- Eventos Emit.
+- 
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## Ejecutar el proyecto
+Clonar el repositorio, ubicarse en la ruta del proyecto y ejecutar el comando:
 
 ```sh
 npm install
 ```
-
-### Compile and Hot-Reload for Development
-
+Una vez instaladas las dependencias, ejecutar el proyecto ejecutando el comando:
 ```sh
 npm run dev
 ```
-
-### Compile and Minify for Production
-
+Abrir el navegador e ingresar en la URL la siguiente dirección:
 ```sh
-npm run build
+http://localhost:5173
 ```
 
-### Lint with [ESLint](https://eslint.org/)
 
-```sh
-npm run lint
-```
+
+
