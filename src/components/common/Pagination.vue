@@ -19,6 +19,9 @@
       </button>
     </div>
   </div>
+  <div class="text-white text-center mt-2">
+    Mostrando página <strong>{{ page }}</strong> de <strong>{{ totalPage }}</strong>
+  </div>
 </template>
 
 <script setup>
@@ -26,6 +29,8 @@ const emit = defineEmits(["navigatePage"]);
 
 const props = defineProps({
   pagination: Object,
+  page: Number,
+  totalPage: Number,
 });
 
 const next = () => {
