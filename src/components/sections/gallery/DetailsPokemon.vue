@@ -4,7 +4,7 @@
       <div class="col-12 bg-secondary text-white p-2 title">Fotos</div>
       <div class="col-12 bg-light content pb-3 mb-3">
         <div class="row">
-          <div class="col-4 text-center" v-for="[index, img] in fotos" :key="index">
+          <div class="col-6 col-md-4 col-lg-3 text-center" v-for="[index, img] in fotos" :key="index">
             <div><img :src="img" :alt="index" /></div>
             <div>{{ index }}</div>
           </div>

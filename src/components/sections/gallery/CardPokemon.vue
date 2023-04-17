@@ -19,7 +19,7 @@
                 :key="index"
                 class="d-flex justify-content-between align-items-center"
               >
-                <div class="text-capitalize">{{ tipo.type.name }}</div>
+                <div class="text-capitalize">{{ showSkill(tipo.type.name) }}</div>
                 <div><IconType :type="tipo.type.name" /></div>
               </div>
             </div>
@@ -42,14 +42,21 @@
 
 <script setup>
 import IconType from "../../common/IconType.vue";
+import constants from "@/utils/constants.js";
+import { computed } from "vue";
 const props = defineProps({
   pokemon: Object,
 });
 
 const emit = defineEmits(["verDetalles"]);
 
+const skills = computed(() => constants.skills);
+
+const showSkill = (skill) => {
+  return skills?.value[skill] || skill;
+};
+
 const verDetalles = () => {
   emit("verDetalles", props.pokemon);
-}
-
+};
 </script>
