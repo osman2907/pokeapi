@@ -120,7 +120,7 @@
 /*Loading*/
 #loading-component {
   z-index: 9999;
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 0px;
   height: 100vh;
